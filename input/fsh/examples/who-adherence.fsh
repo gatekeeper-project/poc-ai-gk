@@ -29,17 +29,17 @@ Usage: #example
 * timestamp = "2023-06-08T00:00:00Z"
 
 * entry[+].fullUrl = "urn:uuid:277d4e6d-b3b5-4bec-8236-3e84141e4c2e"
-* entry[=].resource = Observation-wbc-total
+* entry[=].resource = Observation-whoAdh-total
 
 * entry[+].fullUrl = "urn:uuid:0c8b6ca3-db57-48d5-9166-71474156fba7"
 * entry[=].resource = Observation-age
 
 * entry[+].fullUrl = "urn:uuid:d6534b29-830c-47b5-8185-072ecc567159"
-* entry[=].resource = Observation-wbc-detail-0
+* entry[=].resource = Observation-whoAdh-detail-0
 * entry[+].fullUrl = "urn:uuid:19ee079b-fed5-4c97-89d4-ac3a7bf44e54"
-* entry[=].resource = Observation-wbc-detail-1
+* entry[=].resource = Observation-whoAdh-detail-1
 * entry[+].fullUrl = "urn:uuid:4f5d4baf-71da-4dc8-a5d6-4a24f0050e34"
-* entry[=].resource = Observation-wbc-detail-4
+* entry[=].resource = Observation-whoAdh-detail-4
 
 * entry[+].fullUrl = "urn:uuid:a2fcad41-09c7-4140-bdfd-a76ba44f140a"
 * entry[=].resource = CarePlan-0
@@ -51,7 +51,7 @@ Usage: #example
 //****************************************************************/
 //****************************************************************/
 
-Instance: Observation-wbc-total
+Instance: Observation-whoAdh-total
 InstanceOf: ObservationWhoAdherenceTotal
 // Usage: #inline
 * id = "277d4e6d-b3b5-4bec-8236-3e84141e4c2e"
@@ -62,9 +62,9 @@ InstanceOf: ObservationWhoAdherenceTotal
 * insert subject-identifier
 * effectivePeriod.start = "2021-07-01"
 * effectivePeriod.end = "2021-07-30"
-* derivedFrom[+] = Reference(Observation-wbc-detail-0)
-* derivedFrom[+] = Reference(Observation-wbc-detail-1)
-* derivedFrom[+] = Reference(Observation-wbc-detail-4)
+* derivedFrom[+] = Reference(Observation-whoAdh-detail-0)
+* derivedFrom[+] = Reference(Observation-whoAdh-detail-1)
+* derivedFrom[+] = Reference(Observation-whoAdh-detail-4)
 // * performer[+].display = "MUDr. Aleš Procházka"
 * valueQuantity = 22.249857467415143 '%' "%"
 
@@ -84,7 +84,7 @@ InstanceOf: ObservationWhoAdherenceAge
 * valueQuantity = 56 'a' "years"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-wbc-detail-0
+Instance: Observation-whoAdh-detail-0
 InstanceOf: ObservationWhoAdherenceDetail
 // Usage: #inline
 * id = "d6534b29-830c-47b5-8185-072ecc567159"
@@ -100,7 +100,7 @@ InstanceOf: ObservationWhoAdherenceDetail
   * valueString = "User does not perform any muscle strengthening activities"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-wbc-detail-1
+Instance: Observation-whoAdh-detail-1
 InstanceOf: ObservationWhoAdherenceDetail
 // Usage: #inline
 * id = "19ee079b-fed5-4c97-89d4-ac3a7bf44e54"
@@ -118,7 +118,7 @@ InstanceOf: ObservationWhoAdherenceDetail
   * valueString = "User performs muscle strengthening activities less than twice a week and with less than moderate intensity"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Instance: Observation-wbc-detail-4
+Instance: Observation-whoAdh-detail-4
 InstanceOf: ObservationWhoAdherenceDetail
 // Usage: #inline
 * id = "4f5d4baf-71da-4dc8-a5d6-4a24f0050e34"
@@ -151,7 +151,7 @@ Description: "This profile defines how to represent with HL7 FHIR, for the scope
   * detail
     * status = #unknown 
     * code.text  = "User should perform muscle strengthening activities over 2 times a week with minimum of moderate intensity"
-    * reasonReference = Reference(Observation-wbc-detail-0)
+    * reasonReference = Reference(Observation-whoAdh-detail-0)
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -166,7 +166,7 @@ Description: "This profile defines how to represent with HL7 FHIR, for the scope
   * detail
     * status = #unknown 
     * code.text  = "User should perform muscle strengthening activities over 2 times a week with minimum of moderate intensity"
-    * reasonReference = Reference(Observation-wbc-detail-1)
+    * reasonReference = Reference(Observation-whoAdh-detail-1)
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: CarePlan-4
@@ -180,10 +180,10 @@ Description: "This profile defines how to represent with HL7 FHIR, for the scope
   * detail
     * status = #unknown 
     * code.text  = "User should perform aerobic activity over 75 minutes in a week with minimum of moderate intensity"
-    * reasonReference = Reference(Observation-wbc-detail-4)
+    * reasonReference = Reference(Observation-whoAdh-detail-4)
 * activity[+] 
   * detail
     * status = #unknown 
     * code.text  = "User should perform muscle strengthening activities over 2 times a week with minimum of moderate intensity"
-    * reasonReference = Reference(Observation-wbc-detail-4)
+    * reasonReference = Reference(Observation-whoAdh-detail-4)
                                    
