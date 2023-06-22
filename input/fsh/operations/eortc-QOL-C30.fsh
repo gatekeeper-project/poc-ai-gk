@@ -10,14 +10,12 @@ Usage: #definition
 * publisher = "Gatekeeper Project"
 * description = "This operation returns the index of a patient's status and disease worsening based on the EORTC Quality of Life Questionnaire Core-30 (EORTC QOL C30)"
 
-* code = #EortcQolC30Index
+* code = #calculateEortPatientStatus
 
 * comment = "This is just an example created for showing how the operationDefintion may be used for the scope of the Gatekeeper project"
 * system = true
 * type = false
 * instance = false
-/* * inputProfile[+] = 	"http://hl7.org/fhir/StructureDefinition/Observation"
-* inputProfile[+] = 	"http://hl7.org/fhir/StructureDefinition/Condition" */
 * inputProfile = Canonical (ObservationEortcQolC30Input)
 * outputProfile = Canonical (ObservationEortcQolC30Output)
 // ========== in paramters =====
@@ -26,8 +24,8 @@ Usage: #definition
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Input Bundle"
-* parameter[=].type = #Bundle */
-
+* parameter[=].type = #Bundle
+ */
 * parameter[+].name = #input-panel
 * parameter[=].use = #in
 * parameter[=].min = 1
@@ -39,6 +37,6 @@ Usage: #definition
 * parameter[=].use = #out
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "EORTC QOL C30 index"
+* parameter[=].documentation = "EORTC QOL C30 patient status"
 * parameter[=].type = #Observation
 

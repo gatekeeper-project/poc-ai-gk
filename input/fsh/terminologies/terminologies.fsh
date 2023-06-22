@@ -11,7 +11,9 @@ Description: "Gatekeeper internal Code System for AI POC"
 
 // -- temporary placeholders
 
-* #EortcQolC30Index "EORTC QOL C30 panel" "EORTC Quality of Life Questionnaire Core-30 panel" 
+* #EortcQolC30-panel "EORTC QOL C30 panel" "EORTC Quality of Life Questionnaire Core-30 panel" 
+
+* #likehood "likehood" "likehood"
 
 * #depression-hads "depression-hads" "depression-hads"
 * #anxiety-hads "anxiety-hads" "anxiety-hads"
