@@ -20,14 +20,14 @@ Usage: #definition
 * inputProfile[+] = 	"http://hl7.org/fhir/StructureDefinition/Condition" */
 * outputProfile = Canonical (BundleWhoAdherence)
 // ========== in paramters =====
-* parameter[0].name = #patient-id
+* parameter[+].name = #patient-id
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "Patient ID"
 * parameter[=].type = #Identifier
 
-* parameter[0].name = #period
+* parameter[+].name = #period
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
