@@ -11,7 +11,20 @@ Description: "Gatekeeper internal Code System for AI POC"
 
 // -- temporary placeholders
 
-* #EortcQolC30-panel "EORTC QOL C30 panel" "EORTC Quality of Life Questionnaire Core-30 panel" 
+* #EortcQolC30-panel "EORTC QOL C30 panel" "EORTC Quality of Life Questionnaire Core-30 panel"
+
+// Aragon RUC 1 
+* #frailty-risk-panel "Cluster Frailty Risk panel" "Cluster Frailty Risk panel"
+* #frailty-risk-category "Cluster Frailty Risk category" "Cluster Frailty Risk category"
+* #frailty-risk-distance-unit "Cluster Frailty Risk distance (unit)" "Cluster Frailty Risk distance (unit)"
+* #frailty-risk-distance-perc "Cluster Frailty Risk distance (%)" "Cluster Frailty Risk distance (%)"
+
+// Cyprus (PASYKAF) RUC 7
+* #qol-prediction "QoL prediction" "Cancer patient's quality of life (QoL) prediction"
+
+// Greece RUC 1
+* #waist-circumference "Waist circumference" "Waist circumference (predicted)" 
+* #body-fat "Body Fat" "Body Fat (predicted)"
 
 * #likehood "likehood" "likehood"
 
@@ -57,6 +70,34 @@ Description: "Gatekeeper internal Code System for AI POC"
 * #Light-sleep-duration "Light sleep duration" "Light sleep duration"
 * #REM-sleep-duration "REM sleep duration" "REM sleep duration"
 * #Awake "Awake" "Awake"
+
+//+++++++++++++++++++++++++++++
+ValueSet: VsAssessedConditions
+Id: gatekeeper-assessed-condition
+Title: "Assessed Conditions"
+Description: "Assessed Conditions"
+//-----------------------------
+
+/* heart failure, or polymedicated people  */
+
+* $sct#13645005 // "COPD"
+* $sct#84114007 // Heart failure (disorder)
+// clarify polymedicated people
+// which kind of cancer? see RUC7
+
+//+++++++++++++++++++++++++++++
+ValueSet: VsPredictedVitalSigns
+Id: gatekeeper-predicted-vital
+Title: "Predicted Vital Signs"
+Description: "Predicted Vital Signs"
+//-----------------------------
+
+* $loinc#59574-4	 // "Body mass index (BMI) [Percentile]"
+* $loinc#39156-5	// Body mass index (BMI) [Ratio]
+* CsGatekeeperAi#waist-circumference // "Waist circumference" 
+* CsGatekeeperAi#body-fat // "Body Fat" 
+// clarify polymedicated people
+// which kind of cancer? see RUC7
 
 //+++++++++++++++++++++++++++++
 ValueSet: VsEortcQolC30

@@ -5,6 +5,7 @@ Usage: #example
 * status = #final
 * code = $sct#225338004 "Risk assessment" 
 * subject = Reference(Patient/pat-1)
+* reasonCode = $sct#13645005 "COPD"
 * occurrenceDateTime = 2021-06-22
 * basis = 	Reference(Observation/bloodPressure)
 * prediction.probabilityDecimal	= 0.15
