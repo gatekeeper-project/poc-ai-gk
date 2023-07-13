@@ -30,7 +30,7 @@ Description: "This profile defines how to represent with HL7 FHIR, for the scope
   * valueQuantity 1..
   // * valueQuantity.unit = "%" // ==> ADD VALUE
   * valueQuantity.system = $ucum
-  // * valueQuantity.code = #% // ==> ADD VALUE
+  * valueQuantity.code = #1
 
 * component contains distance-perc 0..1
 * component[distance-perc]

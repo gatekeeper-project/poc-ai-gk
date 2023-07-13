@@ -1,0 +1,75 @@
+{
+  "resourceType": "OperationDefinition",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/OperationDefinition" ]
+  },
+  "url": "http://localhost:8080/manto/OperationDefinition/-s-calculateManto",
+  "version": "1",
+  "name": "CalculateManto",
+  "title": "Calculate Manto",
+  "status": "active",
+  "kind": "operation",
+  "publisher": "FHIRing SHARE Data, PHS Lab, University of Bologna",
+  "contact": [ {
+    "name": "Pierpaolo Palumbo",
+    "telecom": [ {
+      "system": "email",
+      "value": "pierpaolo.palumbo@unibo.it"
+    } ]
+  } ],
+  "description": "This operation is intended to calculate the Manto risk score for late-life depression in two years. https://doi.org/10.1016/j.jagp.2022.05.017",
+  "affectsState": true,
+  "code": "calculateManto",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "patient",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "type": "Patient"
+  }, {
+    "name": "eurod",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "QuestionnaireResponse"
+  }, {
+    "name": "casp12",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "QuestionnaireResponse"
+  }, {
+    "name": "activities-past-12months",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "QuestionnaireResponse"
+  }, {
+    "name": "limitations-mobility",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "QuestionnaireResponse"
+  }, {
+    "name": "limitations-adl",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "QuestionnaireResponse"
+  }, {
+    "name": "physical-symptoms-perceptions",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "QuestionnaireResponse"
+  }, {
+    "name": "manto-risk-assessment",
+    "use": "out",
+    "min": 1,
+    "max": "1",
+    "type": "RiskAssessment"
+  } ]
+}

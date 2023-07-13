@@ -1,0 +1,249 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
+  },
+  "url": "https://www.share-datadocutool.org/control_construct_schemes/view/133",
+  "name": "MH",
+  "title": "EURO-D",
+  "status": "draft",
+  "subjectType": [ "Patient", "Person" ],
+  "description": "EURO-D: geriatric scale for depressive symptoms. doi:10.1192/bjp.174.4.330",
+  "item": [ {
+    "linkId": "euro1",
+    "text": "In the last month, have you been sad or depressed?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1",
+    "answerOption": [ {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA33-6",
+        "display": "Yes"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA32-8",
+        "display": "No"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro2",
+    "code": [ {
+      "system": "https://loinc.org/",
+      "code": "48516-9"
+    } ],
+    "text": "What are your hopes for the future?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Any hopes mentioned"
+    }, {
+      "valueString": "No hopes mentioned"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro3",
+    "text": "In the last month, have you felt that you would rather be dead?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Any mention of suicidal feelings or wishing to be dead"
+    }, {
+      "valueString": "No such feeling mentioned"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro4",
+    "text": "Do you tend to blame yourself or feel guilty about anything?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Obvious excessive guilt or self-blame"
+    }, {
+      "valueString": "No such feelings"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro5",
+    "text": "Have you had trouble sleeping recently?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Trouble with sleep or recent change in pattern"
+    }, {
+      "valueString": "No trouble sleeping"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro6",
+    "text": "In the last month, what is your interest in things?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Less interest than usual mention"
+    }, {
+      "valueString": "No mention of loss of interest"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro7",
+    "text": "Have you been irritable recently?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1",
+    "answerOption": [ {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA33-6",
+        "display": "Yes"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA32-8",
+        "display": "No"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro8",
+    "text": "What has your appetite been like?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Diminution in desire for food"
+    }, {
+      "valueString": "No diminution in desire for food"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro9",
+    "text": "In the last month, have you had too little energy to do the things you wanted to do?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1",
+    "answerOption": [ {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA33-6",
+        "display": "Yes"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA32-8",
+        "display": "No"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro10",
+    "code": [ {
+      "system": "https://loinc.org/",
+      "code": "48537-5"
+    } ],
+    "text": "How is your concentration? For example, can you concentrate on a television program, film or radio program? Can you concentrate in something you read?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Difficulty in concentrating on entertainment"
+    }, {
+      "valueString": "No such difficulty mentioned"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro11",
+    "text": "What have you enjoyed doing recently?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueString": "Fails to mention any enjoyable activity"
+    }, {
+      "valueString": "Mentions ANY enjoyment from activity"
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "euro12",
+    "text": "In the last month, have you cried at all?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1",
+    "answerOption": [ {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA33-6",
+        "display": "Yes"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA32-8",
+        "display": "No"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  } ]
+}

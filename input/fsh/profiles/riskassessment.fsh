@@ -6,7 +6,8 @@ Title:    "RiskAssessment (Gatekeeper)"
 Description: "This profile defines how to represent a PREDICTION OF EXACERBATIONS FOR PEOPLE WITH COPD, HEART FAILURE OR POLYMEDICATED PEOPLE by using FHIR RiskAssessment for supporting the scope of the Gatekeeper project"
 //-------------------------------------------------------------------------------------------
 * status MS
-* code 1.. // type of code
+* code 1.. 
+* code from VsRiskAssessed (extensible)
 * subject 1..
 * reasonCode 1.. // add binding
 * reasonCode from VsAssessedConditions (extensible)

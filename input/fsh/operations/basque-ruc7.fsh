@@ -1,26 +1,26 @@
-Instance: GreeceRUC1Operation
+Instance: BasqueRUC7Operation
 InstanceOf: OperationDefinition
 /*
-
+CHECK DIFFERENCES ... 
 */
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/GreeceRUC1"
-* name = "MetabolicSyndromePrediction"
-* title = "Greece RUC1: Prediction of metabolic syndrome"
+* url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/AragonRUC257"
+* name = "BasqueRUC7Operation"
+* title = "Basque RUC7: Risk of fall"
 * status = #draft
 * kind = #operation
 * date = "2023-07-11"
 * publisher = "Gatekeeper Project"
-* description = "This operation returns an early prediction of metabolic syndrome."
+* description = "This operation returns the risk of fall based on interaction of polymedication"
 
-* code = #predictMetabolicSyndrome
+* code = #calculateFallRisk
 
 * comment = "This is just an example created for showing how the operationDefintion may be used for the scope of the Gatekeeper project"
 * system = true
 * type = false
 * instance = false
 /* * inputProfile = Canonical (ObservationEortcQolC30Input) */
-* outputProfile = Canonical (ObservationGreeceRuc1) 
+* outputProfile = Canonical (RiskAssessmentGK) 
 // ========== in paramters =====
 /* * parameter[0].name = #bundle
 * parameter[=].use = #in
@@ -36,10 +36,10 @@ Usage: #definition
 * parameter[=].documentation = "Generic Bundle" // ==> To be refined
 * parameter[=].type = #Bundle
 // ========== out paramters =====
-* parameter[+].name = #predicted-metabolic-syndrome
+* parameter[+].name = #fall-risk
 * parameter[=].use = #out
 * parameter[=].min = 1
-* parameter[=].max = "*"
-* parameter[=].documentation = "Predicted metabolic syndrome"
-* parameter[=].type = #Observation
+* parameter[=].max = "1"
+* parameter[=].documentation = "Risk of fall"
+* parameter[=].type = #RiskAssessment
 

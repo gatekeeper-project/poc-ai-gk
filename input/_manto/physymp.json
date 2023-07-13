@@ -1,0 +1,105 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
+  },
+  "url": "fhiringsharedata.org/physical-symptoms-and-perceptions",
+  "name": "physical-symptoms-and-perceptions",
+  "title": "Physical symptoms and perceptions",
+  "status": "draft",
+  "subjectType": [ "Patient", "Person" ],
+  "description": "Physical symptoms and perceptions. Collection of questions asked during the SHARE survey",
+  "item": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+      "valueInteger": 0
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+      "valueInteger": 10
+    } ],
+    "linkId": "ac012_",
+    "code": [ {
+      "system": "https://www.share-datadocutool.org/",
+      "version": "1.6.0",
+      "code": "AC012_HowSat",
+      "display": "How satisfied with life"
+    } ],
+    "text": "On a scale from 0 to 10 where 0 means completely dissatisfied and 10 means completely satisfied, how satisfied are you with your life?",
+    "type": "integer",
+    "required": false
+  }, {
+    "linkId": "mh037_",
+    "code": [ {
+      "system": "https://www.share-datadocutool.org/",
+      "version": "1.6.0",
+      "code": "MH037_lonely",
+      "display": "Feels lonely"
+    }, {
+      "system": "https://loinc.org/",
+      "code": "100950-5",
+      "display": "Frequency of feeling lonely"
+    } ],
+    "text": "How much of the time do you feel lonely?",
+    "type": "coding",
+    "required": false,
+    "answerOption": [ {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA10044-8",
+        "display": "Often"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA10082-8",
+        "display": "Some of the time"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA14770-4",
+        "display": "Never or hardly ever"
+      }
+    }, {
+      "valueCoding": {
+        "system": "https://loinc.org/",
+        "code": "LA4489-6",
+        "display": "Unknown"
+      }
+    } ]
+  }, {
+    "linkId": "ph084_",
+    "code": [ {
+      "system": "https://www.share-datadocutool.org/",
+      "version": "1.6.0",
+      "code": "PH084_TroubledPain",
+      "display": "Troubled with pain"
+    } ],
+    "text": "Are you troubled with pain?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "ph089d3",
+    "code": [ {
+      "system": "https://www.share-datadocutool.org/",
+      "code": "ph089d3",
+      "display": "Bothered by frailty: dizziness, faints or blackouts"
+    } ],
+    "text": "For the past six months at least, have you been bothered by dizziness, faints or blackouts?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "ph089d4",
+    "code": [ {
+      "system": "https://www.share-datadocutool.org/",
+      "code": "ph089d4",
+      "display": "Bothered by frailty: fatigue"
+    } ],
+    "text": "For the past six months at least, have you been bothered by fatigue?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  } ]
+}

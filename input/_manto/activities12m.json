@@ -1,0 +1,61 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
+  },
+  "url": "https://www.share-datadocutool.org/question_constructs/view/4901",
+  "name": "AC035_ActPastTwelveMonths",
+  "title": "Activities in the past 12 months",
+  "status": "draft",
+  "subjectType": [ "Patient", "Person" ],
+  "description": "Activities in the past 12 months",
+  "item": [ {
+    "linkId": "activities.1",
+    "text": "Have you done done voluntary of charity work in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.4",
+    "text": "Have you attended an educational or training course in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.5",
+    "text": "Have you gone to a sport, social or other kind of club in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.7",
+    "text": "Have you taken part in a political or community-related organization in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.8",
+    "text": "Have you read books, magazines or newspapers in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.9",
+    "text": "Have you done word or number games such as crossword puzzles or Sudoku in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.10",
+    "text": "Have you played cards or games such as chess in the past 12 months?",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  }, {
+    "linkId": "activities.no",
+    "text": "None of these",
+    "type": "coding",
+    "required": false,
+    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+  } ]
+}

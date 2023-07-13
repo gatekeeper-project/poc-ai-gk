@@ -71,6 +71,16 @@ Description: "Gatekeeper internal Code System for AI POC"
 * #REM-sleep-duration "REM sleep duration" "REM sleep duration"
 * #Awake "Awake" "Awake"
 
+
+//+++++++++++++++++++++++++++++
+ValueSet: VsRiskAssessed
+Id: gatekeeper-risk-assessed
+Title: "Risk Assessed"
+Description: "Risk Assessed"
+//-----------------------------
+
+* $sct#414191008 // Fall risk assessment (procedure)
+
 //+++++++++++++++++++++++++++++
 ValueSet: VsAssessedConditions
 Id: gatekeeper-assessed-condition
@@ -82,6 +92,8 @@ Description: "Assessed Conditions"
 
 * $sct#13645005 // "COPD"
 * $sct#84114007 // Heart failure (disorder)
+* $sct#161898004 // Falls (finding)
+* $sct#408561005 // Falls caused by medication (finding)
 // clarify polymedicated people
 // which kind of cancer? see RUC7
 
