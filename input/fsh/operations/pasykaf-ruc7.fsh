@@ -1,10 +1,7 @@
 Instance: PasykafRuc7Operation
 InstanceOf: OperationDefinition
-/*
-
-*/
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/PasykafRuc7"
+// * url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/PasykafRuc7"
 * name = "PasykafRuc7Operation"
 * title = "Pasykaf RUC 7: quality of life prediction"
 * status = #draft

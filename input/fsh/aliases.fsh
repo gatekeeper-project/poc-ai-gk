@@ -1,5 +1,8 @@
 //============== ALIAS ===============
 
+//=== Naming Systems
+Alias: $puglia-pat-id = http://puglia.gatekeeper.com/sid
+
 // =========== Code Systems =======
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155

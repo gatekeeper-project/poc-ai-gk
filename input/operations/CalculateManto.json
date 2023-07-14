@@ -1,9 +1,7 @@
 {
   "resourceType": "OperationDefinition",
-  "meta": {
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/OperationDefinition" ]
-  },
-  "url": "http://localhost:8080/manto/OperationDefinition/-s-calculateManto",
+  "id": "CalculateManto",
+  "url": "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/CalculateManto",
   "version": "1",
   "name": "CalculateManto",
   "title": "Calculate Manto",

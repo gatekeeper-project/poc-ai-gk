@@ -1,9 +1,7 @@
 {
   "resourceType": "Questionnaire",
-  "meta": {
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
-  },
-  "url": "fhiringsharedata.org/physical-symptoms-and-perceptions",
+  "id": "Physymp",
+  "url": "http://fhiringsharedata.org/physical-symptoms-and-perceptions",
   "name": "physical-symptoms-and-perceptions",
   "title": "Physical symptoms and perceptions",
   "status": "draft",
@@ -35,34 +33,34 @@
       "code": "MH037_lonely",
       "display": "Feels lonely"
     }, {
-      "system": "https://loinc.org/",
+      "system": "http://loinc.org",
       "code": "100950-5",
       "display": "Frequency of feeling lonely"
     } ],
     "text": "How much of the time do you feel lonely?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
-        "display": "Some of the time"
+        "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA14770-4",
         "display": "Never or hardly ever"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -76,9 +74,9 @@
       "display": "Troubled with pain"
     } ],
     "text": "Are you troubled with pain?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph089d3",
     "code": [ {
@@ -87,9 +85,9 @@
       "display": "Bothered by frailty: dizziness, faints or blackouts"
     } ],
     "text": "For the past six months at least, have you been bothered by dizziness, faints or blackouts?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph089d4",
     "code": [ {
@@ -98,8 +96,8 @@
       "display": "Bothered by frailty: fatigue"
     } ],
     "text": "For the past six months at least, have you been bothered by fatigue?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   } ]
 }

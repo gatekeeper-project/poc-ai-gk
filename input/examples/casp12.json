@@ -1,8 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "meta": {
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
-  },
+  "id": "Casp12",
   "url": "https://www.share-datadocutool.org/control_construct_schemes/view/147",
   "name": "casp12",
   "title": "CASP-12",
@@ -12,36 +10,35 @@
   "item": [ {
     "linkId": "casp12.1",
     "text": "How often do you think your age prevents you from doing the things you would like to do?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -49,36 +46,35 @@
   }, {
     "linkId": "casp12.2",
     "text": "How often do you feel that what happens to you is out of your control?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -86,36 +82,35 @@
   }, {
     "linkId": "casp12.3",
     "text": "How often do you feel left out of things?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -123,36 +118,35 @@
   }, {
     "linkId": "casp12.4",
     "text": "How often do you think that you can do the things that you want to do?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -160,36 +154,35 @@
   }, {
     "linkId": "casp12.5",
     "text": "How often do you think that family responsibilities prevent you from doing what you want to do?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -197,36 +190,35 @@
   }, {
     "linkId": "casp12.6",
     "text": "How often do you think that shortage of money stops you from doing the things you want to do?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -234,36 +226,35 @@
   }, {
     "linkId": "casp12.7",
     "text": "How often do you look forward to each day?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -271,36 +262,35 @@
   }, {
     "linkId": "casp12.8",
     "text": "How often do you feel that your life has meaning?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -308,36 +298,35 @@
   }, {
     "linkId": "casp12.9",
     "text": "How often, on balance, do you look back on your life with a sense of happiness?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -345,36 +334,35 @@
   }, {
     "linkId": "casp12.10",
     "text": "How often do you feel full of energy these days?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -382,36 +370,35 @@
   }, {
     "linkId": "casp12.11",
     "text": "How often do you feel that life is full of opportunities?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }
@@ -419,36 +406,35 @@
   }, {
     "linkId": "casp12.12",
     "text": "How often do you feel that the future looks good for you?",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "https://loinc.org/LL6305-8",
     "answerOption": [ {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA6270-8",
         "display": "Never"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10066-1",
         "display": "Rarely"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10082-8",
         "display": "Sometimes"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA10044-8",
         "display": "Often"
       }
     }, {
       "valueCoding": {
-        "system": "https://loinc.org/",
+        "system": "http://loinc.org",
         "code": "LA4489-6",
         "display": "Unknown"
       }

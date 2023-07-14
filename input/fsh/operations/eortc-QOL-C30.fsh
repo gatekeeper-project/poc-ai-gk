@@ -1,7 +1,7 @@
 Instance: EortcQolC30Operation
 InstanceOf: OperationDefinition
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/EortcQolC30"
+// * url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/EortcQolC30"
 * name = "EortcQolC30Operation"
 * title = "EORTC QOL C30 index"
 * status = #draft

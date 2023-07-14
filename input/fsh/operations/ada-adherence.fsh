@@ -1,16 +1,16 @@
-Instance: WhoAdherenceScoreOperation
+Instance: AdaAdherenceScore
 InstanceOf: OperationDefinition
 Usage: #definition
-// * url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/WhoAdherenceScore"
-* name = "WhoAdherenceScoreOperation"
-* title = "Who Adherence Score Calculation"
+// * url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/AdaAdherenceScore"
+* name = "AdaAdherenceScoreOperation"
+* title = "Ada Adherence Score Calculation"
 * status = #draft
 * kind = #operation
 * date = "2023-06-15"
 * publisher = "Gatekeeper Project"
-* description = "This operation returns the Who Adherence Score, including associated weeekly details and reccomandations."
+* description = "This operation returns the Ada Adherence Score, including associated weeekly details and reccomandations."
 
-* code = #whoAdherenceScore
+* code = #adaAdherenceScore
 
 * comment = "This is just an example created for showing how the operationDefintion may be used for the scope of the Gatekeeper project"
 * system = true
@@ -18,7 +18,7 @@ Usage: #definition
 * instance = false
 /* * inputProfile[+] = 	"http://hl7.org/fhir/StructureDefinition/Observation"
 * inputProfile[+] = 	"http://hl7.org/fhir/StructureDefinition/Condition" */
-* outputProfile = Canonical (BundleWhoAdherence)
+* outputProfile = Canonical (BundleAdaAdherence)
 // ========== in paramters =====
 * parameter[+].name = #patient-id
 * parameter[=].use = #in
@@ -35,10 +35,10 @@ Usage: #definition
 * parameter[=].type = #Period
 
 // ========== out paramters =====
-* parameter[+].name = #whoAdherenceScore
+* parameter[+].name = #adaAdherenceScore
 * parameter[=].use = #out
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Who Adherence Calculation Result"
+* parameter[=].documentation = "Ada Adherence Result"
 * parameter[=].type = #Bundle
 

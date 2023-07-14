@@ -1,8 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "meta": {
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
-  },
+  "id": "PH048HeADLa",
   "url": "https://www.share-datadocutool.org/question_constructs/view/4441",
   "name": "PH048_HeADLa",
   "title": "Difficulties with mobility tasks",
@@ -12,68 +10,68 @@
   "item": [ {
     "linkId": "ph048d1",
     "text": "Walking 100 meters",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d2",
     "text": "Sitting for about two hours",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d3",
     "text": "Getting up from a chair after sitting for long periods",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d4",
     "text": "Climbing several flights of stairs without resting",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d5",
     "text": "Climbing one flight of stairs without resting",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d6",
     "text": "Stooping, kneeling, or crouching",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d7",
     "text": "Reaching or extending your arms above shoulder level",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d8",
     "text": "Pulling or pushing large objects like a living room chair",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d9",
     "text": "Lifting or carrying weights over 10 pounds/5 kilos, like a heavy bag of groceries",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048d10",
     "text": "Picking up a small coin from a table",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph048dno",
     "text": "None of these",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   } ]
 }

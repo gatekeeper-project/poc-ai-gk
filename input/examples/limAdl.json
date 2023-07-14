@@ -1,8 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "meta": {
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Questionnaire" ]
-  },
+  "id": "PH049HeADLb",
   "url": "https://www.share-datadocutool.org/question_constructs/view/4442",
   "name": "PH049_HeADLb",
   "title": "Limitations with activities of daily living",
@@ -10,105 +8,105 @@
   "subjectType": [ "Patient", "Person" ],
   "description": "Please tell me if you have any difficulty with these activities because of a physical, mental, emotional or memory problem. Again exclude any difficulties you expect to last less than three months.",
   "code": [ {
-    "system": "https://loinc.org/",
+    "system": "http://loinc.org",
     "code": "57048-1",
     "display": "ADL and IADLs"
   } ],
   "item": [ {
     "linkId": "ph049d1",
     "text": "Dressing, including shoes and socks",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d2",
     "text": "Walking across a room",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d3",
     "text": "Bathing or showering",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d4",
     "text": "Eating, such as cutting up your food",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d5",
     "text": "Getting in or out of bed",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d6",
     "text": "Using the toilet, including getting up or down",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d7",
     "text": "Using a map to figure out how to get around in a strange place",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d8",
     "text": "Preparing a hot meal",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d9",
     "text": "Shopping for groceries",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d10",
     "text": "Making telephone calls",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d11",
     "text": "Taking medications",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d12",
     "text": "Doing work around the house or garden",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d13",
     "text": "Managing money, such as paying bills and keeping track of expenses",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d14",
     "text": "Leaving the house independently and accessing transportation services",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049d15",
     "text": "Doing personal laundry",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   }, {
     "linkId": "ph049dno",
     "text": "None of these",
-    "type": "coding",
+    "type": "choice",
     "required": false,
-    "answerValueSet": "http://loinc.org/vs/LL5521-1"
+    "answerValueSet": "http://loinc.orgvs/LL5521-1"
   } ]
 }

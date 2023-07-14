@@ -4,9 +4,15 @@ Id: gatekeeper-ai
 Title: "Gatekeeper internal Code System for AI POC"
 Description: "Gatekeeper internal Code System for AI POC"
 //-------------------------------------------------------------------------------------------
+
+* ^experimental = true
+* ^caseSensitive = true
 * #who-adh-score	"Who Adherence Score" "Who Adherence Score"
 * #who-adh-level	"Who Adherence Level" "Who Adherence Level"
 * #who-adh-explainability	"Who Adherence Explainability" "Who Adherence Explainability"
+* #ada-adh-score	"Ada Adherence Score" "Ada Adherence Score"
+* #ada-adh-level	"Ada Adherence Level" "Ada Adherence Level"
+* #ada-adh-explainability	"Ada Adherence Explainability" "Ada Adherence Explainability"
 * #deficient "Deficient" "Deficient"
 
 // -- temporary placeholders
@@ -78,8 +84,9 @@ Id: gatekeeper-risk-assessed
 Title: "Risk Assessed"
 Description: "Risk Assessed"
 //-----------------------------
-
+* ^experimental = true
 * $sct#414191008 // Fall risk assessment (procedure)
+* $sct#225338004 // Risk assessment
 
 //+++++++++++++++++++++++++++++
 ValueSet: VsAssessedConditions
@@ -89,7 +96,7 @@ Description: "Assessed Conditions"
 //-----------------------------
 
 /* heart failure, or polymedicated people  */
-
+* ^experimental = true
 * $sct#13645005 // "COPD"
 * $sct#84114007 // Heart failure (disorder)
 * $sct#161898004 // Falls (finding)
@@ -103,7 +110,7 @@ Id: gatekeeper-predicted-vital
 Title: "Predicted Vital Signs"
 Description: "Predicted Vital Signs"
 //-----------------------------
-
+* ^experimental = true
 * $loinc#59574-4	 // "Body mass index (BMI) [Percentile]"
 * $loinc#39156-5	// Body mass index (BMI) [Ratio]
 * CsGatekeeperAi#waist-circumference // "Waist circumference" 
@@ -117,7 +124,7 @@ Id: gatekeeper-eortcQolC30
 Title: "EORTC QOL C30  input parameters"
 Description: "EORTC Quality of Life Questionnaire Core-30 (EORTC QOL C30) Input parameters"
 //-----------------------------
-
+* ^experimental = true
 * CsGatekeeperAi#depression-hads "depression-hads"
 * CsGatekeeperAi#anxiety-hads "anxiety-hads"
 * CsGatekeeperAi#ipos "ipos"

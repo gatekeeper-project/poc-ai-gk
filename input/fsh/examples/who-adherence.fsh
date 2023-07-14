@@ -5,7 +5,7 @@
 
 RuleSet: subject-identifier
 * subject.identifier
-  * system = $uri
+  * system = $puglia-pat-id
   * value = "user20@puglia.gatekeeper.com"
 
 
@@ -18,7 +18,7 @@ RuleSet: careplan-common-rules
 //    INSTANCES
 //===============================
 
-Instance: Bundle-wbc
+Instance: Bundle-who-ad
 InstanceOf: BundleWhoAdherence
 Title: "Bundle Who Adherence Score"
 Description: "Bundle Who Adherence Score"
@@ -92,7 +92,9 @@ InstanceOf: ObservationWhoAdherenceDetail
 // * category[+] = $observation-category#laboratory
 * code = CsGatekeeperAi#who-adh-score "Who Adherence Score"
 * insert subject-identifier
-* effectiveTiming.code.text = "Week 0"
+* effectivePeriod
+  * start = "2021-07-01"
+  * end = "2021-07-08"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * valueQuantity = 22.249857467415143 '%' "%"
 * component[explainability]

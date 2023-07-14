@@ -1,7 +1,7 @@
 Instance: GenericRiskCalculation
 InstanceOf: OperationDefinition
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk/OperationDefinition/GenericRiskCalculation"
+// * url = "http://hl7.eu/fhir/ig/gk/OperationDefinition/GenericRiskCalculation"
 * name = "GenericRiskCalculationOperation"
 * title = "Generic risk calculation operation"
 * status = #draft
@@ -47,7 +47,7 @@ Usage: #definition
 Instance: RiskCalculation
 InstanceOf: OperationDefinition
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk/OperationDefinition/RiskCalculation"
+// * url = "http://hl7.eu/fhir/ig/gk/OperationDefinition/RiskCalculation"
 * name = "RiskCalculationOperation"
 * title = "Risk Calculation"
 * status = #draft

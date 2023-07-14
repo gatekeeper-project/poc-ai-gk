@@ -1,10 +1,7 @@
 Instance: GreeceRUC3Operation
 InstanceOf: OperationDefinition
-/*
-
-*/
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/GreeceRUC3"
+// * url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/GreeceRUC3"
 * name = "GreeceRUC3Operation"
 * title = "Greece RUC3: Predicted Hypoglycaemia"
 * status = #draft
@@ -22,13 +19,6 @@ Usage: #definition
 /* * inputProfile = Canonical (ObservationEortcQolC30Input) */
 * outputProfile = Canonical (ObservationGreeceRuc1) 
 // ========== in paramters =====
-/* * parameter[0].name = #bundle
-* parameter[=].use = #in
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Input Bundle"
-* parameter[=].type = #Bundle
- */
 * parameter[+].name = #input-panel
 * parameter[=].use = #in
 * parameter[=].min = 1

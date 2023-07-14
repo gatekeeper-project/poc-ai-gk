@@ -4,7 +4,7 @@ InstanceOf: OperationDefinition
 CHECK DIFFERENCES ... 
 */
 Usage: #definition
-* url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/AragonRUC257"
+// * url = "http://hl7.eu/fhir/ig/gk-poc-ai/OperationDefinition/AragonRUC257"
 * name = "BasqueRUC7Operation"
 * title = "Basque RUC7: Risk of fall"
 * status = #draft
