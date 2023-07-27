@@ -17,7 +17,7 @@ Usage: #definition
 * type = false
 * instance = false
 /* * inputProfile = Canonical (ObservationEortcQolC30Input) */
-* outputProfile = Canonical (ObservationAragonRuc1) 
+* outputProfile = Canonical (ObservationPasykafRUC7) 
 // ========== in paramters =====
 /* * parameter[0].name = #bundle
 * parameter[=].use = #in
@@ -33,7 +33,7 @@ Usage: #definition
 * parameter[=].documentation = "Generic Bundle" // ==> To be refined
 * parameter[=].type = #Bundle
 // ========== out paramters =====
-* parameter[+].name = #patient-status-index
+* parameter[+].name = #cluster-frailty-risk
 * parameter[=].use = #out
 * parameter[=].min = 1
 * parameter[=].max = "1"

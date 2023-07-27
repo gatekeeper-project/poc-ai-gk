@@ -36,7 +36,7 @@ Usage: #definition
 * parameter[=].documentation = "Generic Bundle" // ==> To be refined
 * parameter[=].type = #Bundle
 // ========== out paramters =====
-* parameter[+].name = #patient-status-index
+* parameter[+].name = #prediction-of-exacerbation
 * parameter[=].use = #out
 * parameter[=].min = 1
 * parameter[=].max = "1"

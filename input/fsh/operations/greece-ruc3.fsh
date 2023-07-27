@@ -17,7 +17,7 @@ Usage: #definition
 * type = false
 * instance = false
 /* * inputProfile = Canonical (ObservationEortcQolC30Input) */
-* outputProfile = Canonical (ObservationGreeceRuc1) 
+* outputProfile = Canonical (ObservationGreeceRuc3) 
 // ========== in paramters =====
 * parameter[+].name = #input-panel
 * parameter[=].use = #in

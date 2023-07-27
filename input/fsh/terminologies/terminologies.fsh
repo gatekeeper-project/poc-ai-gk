@@ -29,15 +29,12 @@ Description: "Gatekeeper internal Code System for AI POC"
 * #qol-prediction "QoL prediction" "Cancer patient's quality of life (QoL) prediction"
 
 // Greece RUC 1
-* #waist-circumference "Waist circumference" "Waist circumference (predicted)" 
-* #body-fat "Body Fat" "Body Fat (predicted)"
-
 * #likehood "likehood" "likehood"
 
 * #depression-hads "depression-hads" "depression-hads"
 * #anxiety-hads "anxiety-hads" "anxiety-hads"
 * #ipos "ipos" "ipos"
-* #PF2 "PF2 (Physical Functioning)" "PF2 (Physical Functioning"
+* #PF2 "PF2 (Physical Functioning)" "PF2 (Physical Functioning)"
 * #RF2 "RF2 (Role Functioning)" "RF2 (Role Functioning)"
 * #EF "EF (Emotional Functioning)" "EF (Emotional Functioning)"
 * #CF "CF (Cognitive Functioning)" "CF (Cognitive Functioning)"
@@ -105,17 +102,18 @@ Description: "Assessed Conditions"
 // which kind of cancer? see RUC7
 
 //+++++++++++++++++++++++++++++
-ValueSet: VsPredictedVitalSigns
-Id: gatekeeper-predicted-vital
-Title: "Predicted Vital Signs"
-Description: "Predicted Vital Signs"
+ValueSet: VsPredictedMeasures
+Id: gatekeeper-predicted-measure
+Title: "Predicted Parameters"
+Description: "Predicted Parameters (e.g. BMI, Total fat,..)"
 //-----------------------------
 * ^experimental = true
 * $loinc#59574-4	 // "Body mass index (BMI) [Percentile]"
 * $loinc#39156-5	// Body mass index (BMI) [Ratio]
-* CsGatekeeperAi#waist-circumference // "Waist circumference" 
-* CsGatekeeperAi#body-fat // "Body Fat" 
-// clarify polymedicated people
+* $loinc#99504-3  // Glucose [Mass/volume] in Interstitial fluid
+* $sct#276361009 // "Waist circumference" 
+* $sct#248361005  // "Total body fat" 
+
 // which kind of cancer? see RUC7
 
 //+++++++++++++++++++++++++++++
